@@ -66,8 +66,7 @@ jobs:
         -Password ${{ secrets.GITHUB_TOKEN }} `
         -StorePasswordInClearText
 
-    - name: Download ESAPI package
-      run: nuget install ESAPI -Version 16.1.0 -OutputDirectory UncertaintyGoals\packages
+
       
     - name: List folder contents
       shell: powershell
